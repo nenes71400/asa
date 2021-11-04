@@ -1,0 +1,18 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <a href="{% url 'tournois' %}">&#8592; back </a>
+
+<hr>
+
+<div class="card-body">
+    <form>
+        {% csrf_token %}
+        <p> Voulez-vous supprimer ce tournoi ?</p>
+        <input class="button" type="submit" salue="Supprimer"/>
+    
+    </form>
+</div>
+
+{% endblock content %}
